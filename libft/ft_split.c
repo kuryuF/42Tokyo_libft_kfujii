@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kfujii <kfujii@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sabamikan <sabamikan@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 14:46:39 by sabamikan         #+#    #+#             */
-/*   Updated: 2022/11/29 17:30:27 by kfujii           ###   ########.fr       */
+/*   Updated: 2022/12/05 11:26:57 by sabamikan        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_word_count(char const *s, char c)
+static size_t	ft_word_count(char const *s, char c)
 {
 	size_t	i;
 	size_t	word;
@@ -33,7 +33,7 @@ size_t	ft_word_count(char const *s, char c)
 	return (word);
 }
 
-size_t	ft_size_count(char const *s, char c, size_t i)
+static size_t	ft_size_count(char const *s, char c, size_t i)
 {
 	size_t	size;
 
@@ -46,7 +46,7 @@ size_t	ft_size_count(char const *s, char c, size_t i)
 	return (size);
 }
 
-void	ft_free_all(char **strs, int j)
+static void	ft_free_all(char **strs, int j)
 {
 	while (0 < j)
 	{
@@ -56,7 +56,7 @@ void	ft_free_all(char **strs, int j)
 	free(strs);
 }
 
-char	**ft_creat(char const *s, char c, size_t word, char **strs)
+static char	**ft_creat(char const *s, char c, size_t word, char **strs)
 {
 	size_t	i;
 	size_t	j;

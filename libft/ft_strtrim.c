@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kfujii <kfujii@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sabamikan <sabamikan@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:08:09 by kfujii            #+#    #+#             */
-/*   Updated: 2022/11/27 16:11:03 by kfujii           ###   ########.fr       */
+/*   Updated: 2022/12/05 11:30:06 by sabamikan        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	start_pos(char const *s1, char const *set)
 	size_t	i;
 	size_t	len;
 
-	len = ft_strlen((char *)s1);
+	len = ft_strlen(s1);
 	i = 0;
 	while (i < len)
 	{

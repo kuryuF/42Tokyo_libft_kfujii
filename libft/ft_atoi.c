@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kfujii <kfujii@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sabamikan <sabamikan@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 11:23:04 by kfujii            #+#    #+#             */
-/*   Updated: 2022/11/27 17:02:26 by kfujii           ###   ########.fr       */
+/*   Updated: 2022/12/05 11:25:16 by sabamikan        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isspace(const char c)
+static int	ft_isspace(const char c)
 {
 	if (c == ' ' || c == '\n' || c == '\t' || \
 		c == '\f' || c == '\r' || c == '\v')
@@ -20,7 +20,7 @@ int	ft_isspace(const char c)
 	return (0);
 }
 
-int	ft_isnum(const char c)
+static int	ft_isnum(const char c)
 {
 	if ('0' <= c && c <= '9')
 		return (c - '0');

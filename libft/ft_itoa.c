@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kfujii <kfujii@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sabamikan <sabamikan@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 11:30:10 by kfujii            #+#    #+#             */
-/*   Updated: 2022/11/27 14:43:21 by kfujii           ###   ########.fr       */
+/*   Updated: 2022/12/05 11:25:44 by sabamikan        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_get_digit(int n)
+static size_t	ft_get_digit(int n)
 {
 	int	digit;
 

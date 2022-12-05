@@ -6,7 +6,7 @@
 /*   By: sabamikan <sabamikan@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:00:41 by kfujii            #+#    #+#             */
-/*   Updated: 2022/10/28 19:47:47 by sabamikan        ###   ########.fr       */
+/*   Updated: 2022/12/05 11:27:36 by sabamikan        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strchr(const char *s, int c)
 	size_t	i;
 
 	i = 0;
-	while ((unsigned char)s[i] != (unsigned char)c)
+	while (s[i] != (const char)c)
 	{
 		if (s[i] == '\0')
 			return (NULL);
