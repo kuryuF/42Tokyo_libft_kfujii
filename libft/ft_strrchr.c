@@ -6,7 +6,7 @@
 /*   By: sabamikan <sabamikan@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:07:57 by kfujii            #+#    #+#             */
-/*   Updated: 2022/12/05 11:29:58 by sabamikan        ###   ########.fr       */
+/*   Updated: 2022/12/07 12:17:24 by sabamikan        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@ char	*ft_strrchr(const char *s, int c)
 	i = ft_strlen(s);
 	while (0 < i)
 	{
-		if ((unsigned char)s[i] == (unsigned char)c)
+		if (s[i] == (const char)c)
 			return ((char *)&s[i]);
 		i--;
 	}
-	if ((unsigned char)s[0] == (unsigned char)c)
+	if (s[0] == (const char)c)
 		return ((char *)&s[0]);
 	return (NULL);
 }
