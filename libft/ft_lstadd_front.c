@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kfujii <kfujii@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sabamikan <sabamikan@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 11:31:08 by kfujii            #+#    #+#             */
-/*   Updated: 2022/11/27 15:38:44 by kfujii           ###   ########.fr       */
+/*   Updated: 2022/12/07 11:53:20 by sabamikan        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (new == NULL)
+	if (lst == NULL || new == NULL)
 		return ;
 	if (*lst == NULL)
 	{

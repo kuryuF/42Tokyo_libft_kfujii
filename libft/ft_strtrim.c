@@ -6,13 +6,13 @@
 /*   By: sabamikan <sabamikan@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:08:09 by kfujii            #+#    #+#             */
-/*   Updated: 2022/12/05 11:30:06 by sabamikan        ###   ########.fr       */
+/*   Updated: 2022/12/07 12:07:19 by sabamikan        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	start_pos(char const *s1, char const *set)
+static size_t	start_pos(char const *s1, char const *set)
 {
 	size_t	i;
 	size_t	len;
@@ -28,12 +28,12 @@ size_t	start_pos(char const *s1, char const *set)
 	return (i);
 }
 
-size_t	end_pos(char const *s1, char const *set)
+static size_t	end_pos(char const *s1, char const *set)
 {
 	size_t	i;
 	size_t	len;
 
-	len = ft_strlen((char *)s1);
+	len = ft_strlen(s1);
 	i = 0;
 	while (i < len)
 	{
