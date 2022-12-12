@@ -6,7 +6,7 @@
 /*   By: sabamikan <sabamikan@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 11:30:47 by kfujii            #+#    #+#             */
-/*   Updated: 2022/12/07 11:57:17 by sabamikan        ###   ########.fr       */
+/*   Updated: 2022/12/12 09:20:39 by sabamikan        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		*lst = new;
 		return ;
 	}
-	tmp_lst = ft_lstlast(lst);
+	tmp_lst = ft_lstlast(*lst);
 	tmp_lst->next = new;
 }
