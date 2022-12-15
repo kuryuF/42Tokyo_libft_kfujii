@@ -58,7 +58,6 @@ OBJS		=	$(SRCS:.c=.o)
 BONUS_OBJS	=	$(BONUS:.c=.o)
 
 ifdef WITH_BONUS
-	SRCS += $(BONUS)
 	OBJS += $(BONUS_OBJS)
 endif
 
